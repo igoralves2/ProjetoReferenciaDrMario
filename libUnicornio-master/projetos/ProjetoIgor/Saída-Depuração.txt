@@ -1,0 +1,156 @@
+﻿"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\base-debug.exe". Símbolos carregados.
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\ntdll.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\kernel32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\KernelBase.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\SDL2.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\gdi32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\win32u.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\gdi32full.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\msvcp_win.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\ucrtbase.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\user32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\SDL2_ttf.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\msvcrt.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\imm32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\ole32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\SDL2_image.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\SDL2_mixer.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\msvcp140d.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\combase.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\rpcrt4.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\oleaut32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\shell32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\vcruntime140d.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\ucrtbased.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\libfreetype-6.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\winmm.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\version.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\zlib1.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\uxtheme.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\SHCore.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\kernel.appcore.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\bcryptprimitives.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\clbcatq.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\sechost.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\dsound.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\advapi32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\RESAMPLEDMO.DLL". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\powrprof.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\msdmo.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\powrprof.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\SysWOW64\powrprof.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\winmmbase.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\umpdc.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\MMDevAPI.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\wdmaud.drv". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\ksuser.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\avrt.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\devobj.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\cfgmgr32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\AudioSes.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\msacm32.drv". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\msacm32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\midimap.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\dinput8.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\hid.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\InputHost.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\CoreMessaging.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\setupapi.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\cryptbase.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\wintrust.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\crypt32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\msasn1.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\XInput1_4.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\msctf.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\TextInputFramework.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\CoreUIComponents.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\d3d9.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\dwmapi.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\DXCore.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdumdim32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdgmm32.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll"
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdgmm32.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdgmm32.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll"
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdgmm32.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdgmm32.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll"
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdgmm32.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdgmm32.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll"
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdgmm32.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdgmm32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\directxdatabasehelper.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\nvlt.inf_amd64_48fd8f4886b96806\nvdlist.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\nvlt.inf_amd64_48fd8f4886b96806\nvdlist.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\nvlt.inf_amd64_48fd8f4886b96806\nvdlist.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\nvlt.inf_amd64_48fd8f4886b96806\nvdlist.dll"
+O thread 0x51df4 foi fechado com o código 0 (0x0).
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\nvlt.inf_amd64_48fd8f4886b96806\nvdlist.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\nvlt.inf_amd64_48fd8f4886b96806\nvdlist.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\nvlt.inf_amd64_48fd8f4886b96806\nvdlist.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\nvlt.inf_amd64_48fd8f4886b96806\nvdlist.dll"
+O thread 0x5771c foi fechado com o código 0 (0x0).
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\ResourcePolicyClient.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\SysWOW64\ResourcePolicyClient.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdinfo32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igc32.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\ResourcePolicyClient.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\SysWOW64\ResourcePolicyClient.dll"
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\libFLAC-8.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\libogg-0.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\libmodplug-1.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\smpeg2.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\libvorbisfile-3.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\libvorbis-0.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Não carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\libvorbis-0.dll"
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\libvorbis-0.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\ResourcePolicyClient.dll". 
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\Windows.UI.dll". 
+"base-debug.exe" (Win32): Não carregado "C:\Windows\SysWOW64\Windows.UI.dll"
+"base-debug.exe" (Win32): Carregado "C:\Windows\SysWOW64\Windows.UI.dll". 
+O thread 0x56630 foi fechado com o código 0 (0x0).
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\libpng16-16.dll". O módulo foi criado sem símbolos.
+"base-debug.exe" (Win32): Carregado "C:\Users\Igor\Documents\GitHub\ProjetoReferenciaDrMario\libUnicornio-master\projetos\ProjetoIgor\bin\libjpeg-9.dll". O módulo foi criado sem símbolos.
+O thread 0x5716c foi fechado com o código 0 (0x0).
+O thread 0x52acc foi fechado com o código 0 (0x0).
+O thread 0x55e54 foi fechado com o código 0 (0x0).
+O thread 0x55170 foi fechado com o código 0 (0x0).
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdinfo32.dll"
+O thread 0x57864 foi fechado com o código 0 (0x0).
+O thread 0x528c8 foi fechado com o código 0 (0x0).
+O thread 0x57918 foi fechado com o código 0 (0x0).
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igc32.dll"
+O thread 0x57b6c foi fechado com o código 0 (0x0).
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igd9dxva32.dll"
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdgmm32.dll"
+"base-debug.exe" (Win32): Não carregado "C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_9c76e19aa26b9a09\igdumdim32.dll"
+"base-debug.exe" (Win32): Não carregado "C:\Windows\SysWOW64\dwmapi.dll"
+"base-debug.exe" (Win32): Não carregado "C:\Windows\SysWOW64\directxdatabasehelper.dll"
+"base-debug.exe" (Win32): Não carregado "C:\Windows\SysWOW64\d3d9.dll"
+O thread 0x56a90 foi fechado com o código 0 (0x0).
+O thread 0x55eec foi fechado com o código 0 (0x0).
+O thread 0x578d8 foi fechado com o código 0 (0x0).
+O thread 0x57944 foi fechado com o código 0 (0x0).
+O thread 0x5752c foi fechado com o código 0 (0x0).
+O thread 0x57b34 foi fechado com o código 0 (0x0).
+O thread 0x57628 foi fechado com o código 0 (0x0).
+O thread 0x4ffdc foi fechado com o código 0 (0x0).
+O thread 0x57bb0 foi fechado com o código 0 (0x0).
+O programa "[301704] base-debug.exe" foi fechado com o código 0 (0x0).
