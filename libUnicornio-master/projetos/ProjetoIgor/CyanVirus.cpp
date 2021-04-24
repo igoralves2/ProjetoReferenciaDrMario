@@ -3,9 +3,10 @@
 CyanVirus::CyanVirus()
 {
 	setClasseVirus(4);
-	setFeverPower(3);
-	setChillPower(5);
-	setCoughPower(3);
-	setSneezePower(1);
-	setAcuracy(8);
+	setSprite("cyanvirus");
+	setFeverPower(5);
+	setChillPower(4);
+	setCoughPower(4);
+	setSneezePower(4);
+	setAcuracy(6);
 }

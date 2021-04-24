@@ -3,9 +3,10 @@
 PinkVirus::PinkVirus()
 {
 	setClasseVirus(7);
-	setAcuracy(8);
-	setFeverPower(2);
-	setChillPower(5);
-	setCoughPower(4);
-	setSneezePower(3);
+	setSprite("pinkvirus");
+	setFeverPower(9);
+	setChillPower(8);
+	setCoughPower(14);
+	setSneezePower(7);
+	setAcuracy(10);
 }

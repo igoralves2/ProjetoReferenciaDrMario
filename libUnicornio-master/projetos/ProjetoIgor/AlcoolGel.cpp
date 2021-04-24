@@ -3,7 +3,7 @@
 AlcoolGel::AlcoolGel()
 {
 	setTipo(2);
-	setPoder(2);
+	setPoder(4);
 }
 
 
@@ -13,19 +13,27 @@ AlcoolGel::~AlcoolGel()
 
 
 
-void AlcoolGel::atualizar()
+int AlcoolGel::dano(int nivelp, int attackp, int defensev)
 {
-		explodindo = false;
-			if (x < 0 || x > gJanela.getLargura() || y < 0 || y > gJanela.getAltura() || moves == 0) {
-				movendo = false;
+	return Arma::dano(nivelp, attackp, defensev);
+}
 
-			}
-			else {
-				x += this->dx;
-				y += this->dy;
-			}
-			moves++;
-			if (moves >= 200) {
-				moves = 0;
-			}
+void AlcoolGel::atualizar()
+{/*
+	if (x < 0 || x > gJanela.getLargura() || y < 0 || y > gJanela.getAltura()) {
+		movendo = false;
+	}
+	else {*/
+		x += dx;
+		y += dy;
+	/*}*/
+	moves++;
+	if (moves == 200) {
+		explodindo = true;
+		movendo = false;
+	}
+	else if (moves > 300) {
+		explodindo = false;
+		moves = 0;
+	}
 }

@@ -24,17 +24,20 @@ void Virus::setStatus(int novonivel, int novohp, int novoattack, int novadefense
 
 void Virus::atualizar(int xp, int yp)
 {
-	if (xp > this->x) {
-		x += speed;
-	}
-	else if (xp < this->x) {
-		x -= speed;
-	}
-	if (yp > this->y) {
-		y += speed;
-	}
-	else if (yp < this->y) {
-		y -= speed;
+	int mover = rand() % 5;
+	if (mover >= 4) {
+		if (xp > this->x) {
+			x += speed;
+		}
+		else if (xp < this->x) {
+			x -= speed;
+		}
+		if (yp > this->y) {
+			y += speed;
+		}
+		else if (yp < this->y) {
+			y -= speed;
+		}
 	}
 }
 
@@ -66,6 +69,16 @@ void Virus::setSneezePower(int nro)
 void Virus::setAcuracy(int newacuracy)
 {
 	this->acuracia = newacuracy;
+}
+
+void Virus::setX(int novox)
+{
+	this->x = novox;
+}
+
+void Virus::setY(int novoy)
+{
+	this->y = novoy;
 }
 
 int Virus::getFeverPower()
@@ -102,6 +115,11 @@ int Virus::getTipo()
 Sprite Virus::getSprite()
 {
 	return sprite;
+}
+
+void Virus::setSprite(string path)
+{
+	this->sprite.setSpriteSheet(path);
 }
 
 int Virus::dano(int defense, float eficiencia)

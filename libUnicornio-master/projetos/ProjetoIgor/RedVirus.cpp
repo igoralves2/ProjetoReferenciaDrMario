@@ -3,9 +3,10 @@
 RedVirus::RedVirus()
 {
 	setClasseVirus(1);
+	setSprite("redvirus");
 	setFeverPower(2);
-	setChillPower(1);
-	setCoughPower(2);
-	setSneezePower(1);
-	setAcuracy(8);
+	setChillPower(2);
+	setCoughPower(1);
+	setSneezePower(2);
+	setAcuracy(2);
 }

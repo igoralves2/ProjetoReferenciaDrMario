@@ -3,9 +3,10 @@
 Covid::Covid()
 {
 	setClasseVirus(8);
-	setFeverPower(5);
-	setChillPower(5);
-	setCoughPower(3);
-	setSneezePower(1);
-	setAcuracy(8);
+	setSprite("covid");
+	setFeverPower(7);
+	setChillPower(9);
+	setCoughPower(8);
+	setSneezePower(10);
+	setAcuracy(10);
 }

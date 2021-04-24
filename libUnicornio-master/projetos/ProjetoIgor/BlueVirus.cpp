@@ -3,9 +3,10 @@
 BlueVirus::BlueVirus()
 {
 	setClasseVirus(5);
-	setAcuracy(8);
-	setFeverPower(3);
-	setChillPower(5);
-	setCoughPower(1);
-	setSneezePower(1);
+	setSprite("bluevirus");
+	setFeverPower(10);
+	setChillPower(7);
+	setCoughPower(9);
+	setSneezePower(8);
+	setAcuracy(10);
 }

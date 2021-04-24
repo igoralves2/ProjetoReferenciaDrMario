@@ -3,9 +3,10 @@
 PurpleVirus::PurpleVirus()
 {
 	setClasseVirus(6);
-	setFeverPower(3);
-	setChillPower(4);
-	setAcuracy(8);
-	setCoughPower(1);
-	setSneezePower(3);
+	setSprite("purplevirus");
+	setFeverPower(8);
+	setChillPower(12);
+	setCoughPower(7);
+	setSneezePower(9);
+	setAcuracy(10);
 }

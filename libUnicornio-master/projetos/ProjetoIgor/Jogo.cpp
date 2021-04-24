@@ -37,6 +37,7 @@ void Jogo::inicializar()
 	gRecursos.carregarSpriteSheet("greenvirus", "../assets/GreenVirus.png");
 	gRecursos.carregarSpriteSheet("purplevirus", "../assets/PurpleVirus.png");
 	gRecursos.carregarSpriteSheet("pinkvirus", "../assets/PinkVirus.png");
+
 	//O Covid
 	gRecursos.carregarSpriteSheet("covid", "../assets/COVID.png");
 	//Egito dia e noite
@@ -91,6 +92,9 @@ void Jogo::inicializar()
 	levelup.setEscalaY(1);
 	levelup.setAlinhamento(TEXTO_CENTRALIZADO);
 
+	//Audio
+	gRecursos.carregarAudio("musica", "../assets/backgroundmusic.mp3");
+
 	mainmenu.carregarmenu();
 	ls.carregar();
 
@@ -100,7 +104,6 @@ void Jogo::inicializar()
 	
 	spritemascara.setSpriteSheet("mascara");
 
-
 	//Sol e lua
 	gRecursos.carregarSpriteSheet("sun", "../assets/Sun.jpg");
 	gRecursos.carregarSpriteSheet("moon", "../assets/Moon.jpg");
@@ -108,6 +111,7 @@ void Jogo::inicializar()
 	ls.lua.setSpriteSheet("moon");
 	srand(0);
 	state = Menu;
+	gAudios.inicializar();
 }
 
 void Jogo::finalizar()
@@ -123,55 +127,10 @@ void Jogo::executar()
 	while (!gTeclado.soltou[TECLA_ESC] && !gEventos.sair)
 	{
 		uniIniciarFrame();
-
+		gAudios.tocar("musica", 1.0f);
 		//	Seu código vem aqui!
 		//	...
-		if (state != Menu) {
-			Texto statusnivel;
-			statusnivel.setFonte("supermario256");
-			statusnivel.setCor(0, 0, 0);
-			statusnivel.setString(" nivel:" + to_string(player.nivel));
-			statusnivel.setEscalaX(1);
-			statusnivel.setEscalaY(1);
-			statusnivel.setAlinhamento(TEXTO_CENTRALIZADO);
-			statusnivel.desenhar(gJanela.getLargura() / 4, gJanela.getAltura() - 30);
-
-			Texto statusvidas;
-			statusvidas.setFonte("supermario256");
-			statusvidas.setCor(0, 0, 0);
-			statusvidas.setString("hp:" + to_string(player.hp) + "/" + to_string(player.maxhp));
-			statusvidas.setEscalaX(1);
-			statusvidas.setEscalaY(1);
-			statusvidas.setAlinhamento(TEXTO_CENTRALIZADO);
-			statusvidas.desenhar(gJanela.getLargura() / 2, gJanela.getAltura() - 30);
-
-			Texto statusattack;
-			statusattack.setFonte("supermario256");
-			statusattack.setCor(0, 0, 0);
-			statusattack.setString("ataque:" + to_string(player.attack));
-			statusattack.setEscalaX(1);
-			statusattack.setEscalaY(1);
-			statusattack.setAlinhamento(TEXTO_CENTRALIZADO);
-			statusattack.desenhar(gJanela.getLargura() * 3 / 4, gJanela.getAltura() - 30);
-
-			Texto statusdefense;
-			statusattack.setFonte("supermario256");
-			statusattack.setCor(0, 0, 0);
-			statusattack.setString("defesa:" + to_string(player.defense));
-			statusattack.setEscalaX(1);
-			statusattack.setEscalaY(1);
-			statusattack.setAlinhamento(TEXTO_CENTRALIZADO);
-			statusattack.desenhar(gJanela.getLargura() / 3, gJanela.getAltura() - 10);
-
-			Texto statusspeed;
-			statusspeed.setFonte("supermario256");
-			statusspeed.setCor(0, 0, 0);
-			statusspeed.setString("velocidade:" + to_string(player.speed));
-			statusspeed.setEscalaX(1);
-			statusspeed.setEscalaY(1);
-			statusspeed.setAlinhamento(TEXTO_CENTRALIZADO);
-			statusspeed.desenhar(gJanela.getLargura() * 2 / 3, gJanela.getAltura() - 10);
-		}
+		
 		if (state == Menu) {
 			gJanela.setCorDeFundo(255, 255, 255);
 			mainmenu.executarMenu();
@@ -191,26 +150,33 @@ void Jogo::executar()
 			}
 			ls.executar();
 			if (ls.opcao1) {
-				fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 1);
+				fase.carregar("../fase1.txt", &gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 1);
+				//fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 1);
 				state = EmFase;
 			}
 			else if (ls.opcao2) {
-				fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 2);
+				fase.carregar("../fase2.txt", &gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 2);
+				//fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 1);
 				state = EmFase;
 			}else if (ls.opcao3) {
-				fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 3);
+				fase.carregar("../fase3.txt", &gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 3);
+				//fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 1);
 				state = EmFase;
 			}else if (ls.opcao4) {
-				fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 4);
+				fase.carregar("../fase4.txt", &gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 4);
+				//fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 1);
 				state = EmFase;
 			}else if (ls.opcao5) {
-				fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 5);
+				fase.carregar("../fase5.txt", &gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 5);
+				//fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 1);
 				state = EmFase;
 			}else if (ls.opcao6) {
-				fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 6);
+				fase.carregar("../fase6.txt", &gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 6);
+				//fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 1); 
 				state = EmFase;
 			}else if (ls.opcao7) {
-				fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 7);
+				fase.carregar("../fase7.txt", &gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 7);
+				//fase.carregar(&gamescore, &player, ls.dia, ls.datadia, ls.datames, ls.dataano, 1);
 				state = EmFase;
 			}
 			ls.desenhar();
@@ -238,7 +204,7 @@ void Jogo::executar()
 			Texto pontuacao;
 			pontuacao.setFonte("supermario256");
 			pontuacao.setCor(0, 0, 0);
-			pontuacao.setString("level score:" + to_string(gamescore + fase.getScore()));
+			pontuacao.setString("level score:" + to_string(fase.getScore()) + "\ntotal score:" + to_string(gamescore + fase.getScore()));
 			pontuacao.setEscalaX(1);
 			pontuacao.setEscalaY(1);
 			pontuacao.setAlinhamento(TEXTO_CENTRALIZADO);
@@ -288,6 +254,52 @@ void Jogo::executar()
 				player.speed++;
 				state = SelecaoFase;
 			}
+		}
+		if (state != Menu) {
+			Texto statusnivel;
+			statusnivel.setFonte("supermario256");
+			statusnivel.setCor(0, 0, 0);
+			statusnivel.setString(" nivel:" + to_string(player.nivel));
+			statusnivel.setEscalaX(1);
+			statusnivel.setEscalaY(1);
+			statusnivel.setAlinhamento(TEXTO_CENTRALIZADO);
+			statusnivel.desenhar(gJanela.getLargura() / 4, gJanela.getAltura() - 30);
+
+			Texto statusvidas;
+			statusvidas.setFonte("supermario256");
+			statusvidas.setCor(0, 0, 0);
+			statusvidas.setString("hp:" + to_string(player.hp) + "/" + to_string(player.maxhp));
+			statusvidas.setEscalaX(1);
+			statusvidas.setEscalaY(1);
+			statusvidas.setAlinhamento(TEXTO_CENTRALIZADO);
+			statusvidas.desenhar(gJanela.getLargura() / 2, gJanela.getAltura() - 30);
+
+			Texto statusattack;
+			statusattack.setFonte("supermario256");
+			statusattack.setCor(0, 0, 0);
+			statusattack.setString("ataque:" + to_string(player.attack));
+			statusattack.setEscalaX(1);
+			statusattack.setEscalaY(1);
+			statusattack.setAlinhamento(TEXTO_CENTRALIZADO);
+			statusattack.desenhar(gJanela.getLargura() * 3 / 4, gJanela.getAltura() - 30);
+
+			Texto statusdefense;
+			statusattack.setFonte("supermario256");
+			statusattack.setCor(0, 0, 0);
+			statusattack.setString("defesa:" + to_string(player.defense));
+			statusattack.setEscalaX(1);
+			statusattack.setEscalaY(1);
+			statusattack.setAlinhamento(TEXTO_CENTRALIZADO);
+			statusattack.desenhar(gJanela.getLargura() / 3, gJanela.getAltura() - 10);
+
+			Texto statusspeed;
+			statusspeed.setFonte("supermario256");
+			statusspeed.setCor(0, 0, 0);
+			statusspeed.setString("velocidade:" + to_string(player.speed));
+			statusspeed.setEscalaX(1);
+			statusspeed.setEscalaY(1);
+			statusspeed.setAlinhamento(TEXTO_CENTRALIZADO);
+			statusspeed.desenhar(gJanela.getLargura() * 2 / 3, gJanela.getAltura() - 10);
 		}
 		uniTerminarFrame();
 	}

@@ -2,10 +2,11 @@
 
 GreenVirus::GreenVirus()
 {
-	setAcuracy(8);
 	setClasseVirus(3);
-	setFeverPower(3);
+	setSprite("greenvirus");
+	setFeverPower(4);
 	setChillPower(3);
 	setCoughPower(3);
 	setSneezePower(3);
+	setAcuracy(4);
 }

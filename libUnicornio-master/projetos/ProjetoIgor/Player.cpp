@@ -21,7 +21,7 @@ Player::~Player()
 {
 }
 
-void Player::atualizar()
+void Player::atualizar(int xmax, int ymax)
 {
 	atirandocomprimido = false;
 	atirandoalcoolgel = false;
@@ -33,7 +33,7 @@ void Player::atualizar()
 		}
 	}else if (gTeclado.segurando[TECLA_DIR]) {
 		currentdir = right;
-		if (x + speed < gJanela.getLargura()) {
+		if (x + speed < xmax) {
 			x += speed;
 		}
 	}
@@ -45,7 +45,7 @@ void Player::atualizar()
 	}
 	else if (gTeclado.segurando[TECLA_BAIXO]) {
 		currentdir = down;
-		if (y + speed < gJanela.getAltura()) {
+		if (y + speed < ymax) {
 			y += speed;
 		}
 	}
@@ -61,7 +61,7 @@ void Player::atualizar()
 float Player::eficienciamascara()
 {
 	if (m.getTipo() == 1) {
-		return 0.5f;
+		return 0.50f;
 	}
 	else if (m.getTipo() == 2) {
 			return 0.25f;
