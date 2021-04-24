@@ -114,6 +114,12 @@ void Fase::carregar(string filePath, long* score, Player* pnovo, bool novosun, i
 		(*pnovo).sprite.setSpriteSheet("drmario");
 		(*pnovo).x = fasewidth / 2;
 		(*pnovo).y = faseheight / 2;
+		(*pnovo).c.resetPosition(&(*pnovo).x, &(*pnovo).y);
+		(*pnovo).c.setSprite("capsule");
+		(*pnovo).ag.resetPosition(&(*pnovo).x, &(*pnovo).y);
+		(*pnovo).ag.setSprite("alcoolgel");
+		(*pnovo).v.resetPosition(&(*pnovo).x, &(*pnovo).y);
+		(*pnovo).v.setSprite("vacina");
 		this->sun = novosun;
 		this->dia = novodia;
 		this->mes = novomes;
