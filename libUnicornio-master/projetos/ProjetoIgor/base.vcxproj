@@ -102,6 +102,7 @@
     <ClCompile Include="AlcoolGel.cpp" />
     <ClCompile Include="Arma.cpp" />
     <ClCompile Include="BlueVirus.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Comprimido.cpp" />
     <ClCompile Include="Covid.cpp" />
     <ClCompile Include="CyanVirus.cpp" />
@@ -126,6 +127,7 @@
     <ClInclude Include="AlcoolGel.h" />
     <ClInclude Include="Arma.h" />
     <ClInclude Include="BlueVirus.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Comprimido.h" />
     <ClInclude Include="Covid.h" />
     <ClInclude Include="CyanVirus.h" />

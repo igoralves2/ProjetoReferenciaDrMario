@@ -38,50 +38,50 @@ void Fase::carregar(long* score, Player* pnovo, bool novosun, int novodia, int n
 	Virus red = RedVirus();
 	red.setStatus(1,10,1,1,1);
 	//red.sprite.setSpriteSheet("redvirus");
-	red.x = (fasewidth / 2 - 360);
-	red.y = (faseheight / 2 - 400);
+	red.setX((fasewidth / 2 - 360));
+	red.setY((faseheight / 2 - 400));
 
 	Virus yellow = YellowVirus();
 	yellow.setStatus(1, 10, 1, 1, 1);
 	//yellow.sprite.setSpriteSheet("yellowvirus");
-	yellow.x = (fasewidth / 2 - 240);
-	yellow.y = (faseheight / 2 - 400);
+	yellow.setX((fasewidth / 2 - 240));
+	yellow.setY((faseheight / 2 - 400));
 
 	Virus blue = BlueVirus();
 	blue.setStatus(1, 10, 1, 1, 1);
 	//blue.sprite.setSpriteSheet("bluevirus");
-	blue.x = (fasewidth / 2 + 240);
-	blue.y = (faseheight / 2 - 400);
+	blue.setX((fasewidth / 2 + 240));
+	blue.setY((faseheight / 2 - 400));
 
 	Virus cyan = CyanVirus();
 	cyan.setStatus(1, 10, 1, 1, 1);
 	//cyan.sprite.setSpriteSheet("cyanvirus");
-	cyan.x = (fasewidth / 2 + 360);
-	cyan.y = (faseheight / 2 - 400);
+	cyan.setX((fasewidth / 2 + 360));
+	cyan.setY((faseheight / 2 - 400));
 
 	Virus green = GreenVirus();
 	green.setStatus(1, 10, 1, 1, 1);
 	//green.sprite.setSpriteSheet("greenvirus");
-	green.x = (fasewidth / 2 - 360);
-	green.y = (faseheight / 2 + 400);
+	green.setX((fasewidth / 2 - 360));
+	green.setY((faseheight / 2 + 400));
 
 	Virus purple = PurpleVirus();
 	purple.setStatus(1, 10, 1, 1, 1);
 	//purple.sprite.setSpriteSheet("purplevirus");
-	purple.x = fasewidth / 2 - 240;
-	purple.y = (faseheight / 2 + 400);
+	purple.setX(fasewidth / 2 - 240);
+	purple.setY(faseheight / 2 + 400);
 
 	Virus pink = PinkVirus();
 	pink.setStatus(1, 10, 1, 1, 1);
 	//pink.sprite.setSpriteSheet("pinkvirus");
-	pink.x = (fasewidth / 2 + 240);
-	pink.y = (faseheight / 2 + 400);
+	pink.setX((fasewidth / 2 + 240));
+	pink.setY((faseheight / 2 + 400));
 
 	Virus covid = Covid();
 	covid.setStatus(1, 10, 1, 1, 1);
 	//covid.sprite.setSpriteSheet("covid");
-	covid.x = (fasewidth / 2 + 360);
-	covid.y = (faseheight / 2 + 400);
+	covid.setX(fasewidth / 2 + 360);
+	covid.setY(faseheight / 2 + 400);
 
 	(*pnovo).c.resetPosition(&(*pnovo).x, &(*pnovo).y);
 	(*pnovo).c.setSprite("capsule");
@@ -152,57 +152,57 @@ void Fase::carregar(string filePath, long* score, Player* pnovo, bool novosun, i
 			case 1://Red
 				v = RedVirus();
 				v.setStatus(nivel, hp, atk, def, spd);
-				v.x = x;
-				v.y = y;
+				v.setX(x);
+				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 2://Yellow
 				v = YellowVirus();
 				v.setStatus(nivel, hp, atk, def, spd);
-				v.x = x;
-				v.y = y;
+				v.setX(x);
+				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 3://Green
 				v = GreenVirus();
 				v.setStatus(nivel, hp, atk, def, spd);
-				v.x = x;
-				v.y = y;
+				v.setX(x);
+				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 4://Cyan
 				v = CyanVirus();
 				v.setStatus(nivel, hp, atk, def, spd);
-				v.x = x;
-				v.y = y;
+				v.setX(x);
+				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 5://Blue
 				v = BlueVirus();
 				v.setStatus(nivel, hp, atk, def, spd);
-				v.x = x;
-				v.y = y;
+				v.setX(x);
+				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 6://Purple
 				v = PurpleVirus();
 				v.setStatus(nivel, hp, atk, def, spd);
-				v.x = x;
-				v.y = y;
+				v.setX(x);
+				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 7://Pink
 				v = PinkVirus();
 				v.setStatus(nivel, hp, atk, def, spd);
-				v.x = x;
-				v.y = y;
+				v.setX(x);
+				v.setY(y);
 				viruses[i] = v;
 				break;
 			default://Covid
 				v = Covid();
 				v.setStatus(nivel, hp, atk, def, spd);
-				v.x = x;
-				v.y = y;
+				v.setX(x);
+				v.setY(y);
 				viruses[i] = v;
 				break;
 			}
@@ -307,7 +307,7 @@ void Fase::atualizar(Player* pnovo)
 	for (int i = 0; i < nroViruses; i++) {
 		if (viruses[i].vivo) {
 			viruses[i].atualizar((*pnovo).x, (*pnovo).y);
-			bool colidiujogador = ((abs((*pnovo).x - viruses[i].x) < 50) && (abs((*pnovo).y - viruses[i].y) < 50));
+			bool colidiujogador = ((abs((*pnovo).x - viruses[i].getX()) < 50) && (abs((*pnovo).y - viruses[i].getY()) < 50));
 			if (colidiujogador) {
 				(*pnovo).hp -= viruses[i].dano((*pnovo).defense, (*pnovo).m.getEficienciaContagio());
 				if ((*pnovo).hp <= 0) {
@@ -315,21 +315,21 @@ void Fase::atualizar(Player* pnovo)
 				}
 			}
 			bool colidiuComprimido = uniTestarColisaoSpriteComSprite((*pnovo).c.getSprite(), (*pnovo).c.x, (*pnovo).c.y, 0,
-				viruses[i].getSprite(), viruses[i].x, viruses[i].y, 0);
+				viruses[i].getSprite(), viruses[i].getX(), viruses[i].getY(), 0);
 			bool colidiuAlcoolGel = false;
 			bool colidiuVacina = uniTestarColisaoSpriteComSprite((*pnovo).v.getSprite(), (*pnovo).v.x, (*pnovo).v.y, 0,
-				viruses[i].getSprite(), viruses[i].x, viruses[i].y, 0);
+				viruses[i].getSprite(), viruses[i].getX(), viruses[i].getY(), 0);
 			if ((*pnovo).ag.explodindo) {
 				colidiuAlcoolGel = uniTestarColisaoCirculoComSprite((*pnovo).ag.x, (*pnovo).ag.y, 100, viruses[i].getSprite(),
-					viruses[i].x, viruses[i].y, 0);
+					viruses[i].getX(), viruses[i].getY(), 0);
 			}
 			else if((*pnovo).ag.movendo){
 				colidiuAlcoolGel = uniTestarColisaoSpriteComSprite((*pnovo).ag.getSprite(), (*pnovo).ag.x, (*pnovo).ag.y, 0,
-					viruses[i].getSprite(), viruses[i].x, viruses[i].y, 0);
+					viruses[i].getSprite(), viruses[i].getX(), viruses[i].getY(), 0);
 			}
 			if (colidiuComprimido && atualizouc) {
-				viruses[i].hp -= (*pnovo).c.dano((*pnovo).nivel, (*pnovo).attack, viruses[i].defense);
-				if (viruses[i].hp <= 0) {
+				viruses[i].setHP(viruses[i].getHP() - (*pnovo).c.dano((*pnovo).nivel, (*pnovo).attack, viruses[i].getDefense()));
+				if (viruses[i].getHP() <= 0) {
 					viruses[i].vivo = false;
 					setScore(getScore() + 10);
 					virusderrotados++;
@@ -338,16 +338,16 @@ void Fase::atualizar(Player* pnovo)
 			}
 			if (colidiuAlcoolGel && atualizouag) {
 				//(*pnovo).ag.explodindo = true;
-				viruses[i].hp -= (*pnovo).ag.dano((*pnovo).nivel, (*pnovo).attack, viruses[i].defense);
-				if (viruses[i].hp <= 0) {
+				viruses[i].setHP(viruses[i].getHP() - (*pnovo).ag.dano((*pnovo).nivel, (*pnovo).attack, viruses[i].getDefense()));
+				if (viruses[i].getHP() <= 0) {
 					viruses[i].vivo = false;
 					setScore(getScore() + 10);
 					virusderrotados++;
 				}
 				(*pnovo).ag.resetPosition(&(*pnovo).x, &(*pnovo).y);
 			}if (colidiuVacina && atualizouv) {
-				viruses[i].hp -= (*pnovo).v.dano((*pnovo).nivel, (*pnovo).attack, viruses[i].defense);
-				if (viruses[i].hp <= 0) {
+				viruses[i].setHP(viruses[i].getHP() - (*pnovo).v.dano((*pnovo).nivel, (*pnovo).attack, viruses[i].getDefense()));
+				if (viruses[i].getHP() <= 0) {
 					viruses[i].vivo = false;
 					setScore(getScore() + 10);
 					virusderrotados++;
@@ -372,10 +372,10 @@ void Fase::atualizar(Player* pnovo)
 	}
 	(*pnovo).sprite.desenhar((*pnovo).x - playercamera.getX(), (*pnovo).y - playercamera.getY());
 	for (int i = 0; i < nroViruses; i++) {
-		if (abs(viruses[i].x - playercamera.getX()) / 2 <= gJanela.getLargura() / 2 &&
-			abs(viruses[i].y - playercamera.getY()) / 2 <= gJanela.getAltura() / 2) {//Se está dentro da camera
+		if (abs(viruses[i].getX() - playercamera.getX()) / 2 <= gJanela.getLargura() / 2 &&
+			abs(viruses[i].getY() - playercamera.getY()) / 2 <= gJanela.getAltura() / 2) {//Se está dentro da camera
 			if (viruses[i].vivo) {
-				viruses[i].getSprite().desenhar(viruses[i].x - playercamera.getX(), viruses[i].y - playercamera.getY());
+				viruses[i].getSprite().desenhar(viruses[i].getX() - playercamera.getX(), viruses[i].getY() - playercamera.getY());
 			}
 		}
 	}

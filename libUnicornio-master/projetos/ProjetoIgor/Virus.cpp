@@ -111,6 +111,16 @@ int Virus::getTipo()
 	return classevirus;
 }
 
+int Virus::getX()
+{
+	return this->x;
+}
+
+int Virus::getY()
+{
+	return this->y;
+}
+
 
 Sprite Virus::getSprite()
 {
@@ -176,4 +186,39 @@ int Virus::dano(int defense, float eficiencia)
 		}
 	}
 	return dano;
+}
+
+int Virus::getLevel()
+{
+	return nivel;
+}
+
+int Virus::getMaxHP()
+{
+	return maxhp;
+}
+
+int Virus::getHP()
+{
+	return hp;
+}
+
+int Virus::getAttack()
+{
+	return attack;
+}
+
+int Virus::getDefense()
+{
+	return defense;
+}
+
+int Virus::getSpeed()
+{
+	return speed;
+}
+
+void Virus::setHP(int nro)
+{
+	this->hp = nro;
 }
