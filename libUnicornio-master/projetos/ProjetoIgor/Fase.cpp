@@ -23,7 +23,7 @@ void Fase::carregar(long* score, Player* pnovo, bool novosun, int novodia, int n
 	fasewidth = 1000;
 	faseheight = 1000;
 	this->levelscore = *score;
-	(*pnovo).sprite.setSpriteSheet("drmario");
+	//(*pnovo).sprite.setSpriteSheet("drmario");
 	(*pnovo).x = fasewidth / 2;
 	(*pnovo).y = faseheight / 2;
 	this->sun = novosun;
@@ -82,7 +82,6 @@ void Fase::carregar(long* score, Player* pnovo, bool novosun, int novodia, int n
 	//covid.sprite.setSpriteSheet("covid");
 	covid.setX(fasewidth / 2 + 360);
 	covid.setY(faseheight / 2 + 400);
-
 	(*pnovo).c.resetPosition(&(*pnovo).x, &(*pnovo).y);
 	(*pnovo).c.setSprite("capsule");
 	(*pnovo).ag.resetPosition(&(*pnovo).x, &(*pnovo).y);
@@ -110,7 +109,7 @@ void Fase::carregar(string filePath, long* score, Player* pnovo, bool novosun, i
 	if (arq.is_open()) {
 		fasewidth = 1000;
 		faseheight = 1000;
-		this->levelscore = *score;
+		this->levelscore = 0;
 		(*pnovo).sprite.setSpriteSheet("drmario");
 		(*pnovo).x = fasewidth / 2;
 		(*pnovo).y = faseheight / 2;
@@ -151,42 +150,42 @@ void Fase::carregar(string filePath, long* score, Player* pnovo, bool novosun, i
 			switch (tipo) {
 			case 1://Red
 				v = RedVirus();
-				v.setStatus(nivel, hp, atk, def, spd);
+				v.setStatus(nivel, hp, atk * 2, def, spd);
 				v.setX(x);
 				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 2://Yellow
 				v = YellowVirus();
-				v.setStatus(nivel, hp, atk, def, spd);
+				v.setStatus(nivel, hp, atk, def * 2, spd);
 				v.setX(x);
 				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 3://Green
 				v = GreenVirus();
-				v.setStatus(nivel, hp, atk, def, spd);
+				v.setStatus(nivel, hp, atk, def, spd * 2);
 				v.setX(x);
 				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 4://Cyan
 				v = CyanVirus();
-				v.setStatus(nivel, hp, atk, def, spd);
+				v.setStatus(nivel, hp, atk * 2, def * 2, spd);
 				v.setX(x);
 				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 5://Blue
 				v = BlueVirus();
-				v.setStatus(nivel, hp, atk, def, spd);
+				v.setStatus(nivel, hp, atk * 2, def, spd * 2);
 				v.setX(x);
 				v.setY(y);
 				viruses[i] = v;
 				break;
 			case 6://Purple
 				v = PurpleVirus();
-				v.setStatus(nivel, hp, atk, def, spd);
+				v.setStatus(nivel, hp, atk, def * 2, spd * 2);
 				v.setX(x);
 				v.setY(y);
 				viruses[i] = v;
@@ -200,7 +199,7 @@ void Fase::carregar(string filePath, long* score, Player* pnovo, bool novosun, i
 				break;
 			default://Covid
 				v = Covid();
-				v.setStatus(nivel, hp, atk, def, spd);
+				v.setStatus(nivel, hp, atk * 2, def * 2, spd * 2);
 				v.setX(x);
 				v.setY(y);
 				viruses[i] = v;
@@ -208,6 +207,7 @@ void Fase::carregar(string filePath, long* score, Player* pnovo, bool novosun, i
 			}
 		}
 		arq.close();
+		carregou = true;
 	}
 	else {
 		std::cout << "Erro! Fase não carregada!" << std::endl;
@@ -344,7 +344,7 @@ void Fase::atualizar(Player* pnovo)
 					setScore(getScore() + 10);
 					virusderrotados++;
 				}
-				(*pnovo).ag.resetPosition(&(*pnovo).x, &(*pnovo).y);
+				(*pnovo).v.resetPosition(&(*pnovo).x, &(*pnovo).y);
 			}if (colidiuVacina && atualizouv) {
 				viruses[i].setHP(viruses[i].getHP() - (*pnovo).v.dano((*pnovo).nivel, (*pnovo).attack, viruses[i].getDefense()));
 				if (viruses[i].getHP() <= 0) {
@@ -400,12 +400,13 @@ void Fase::finalizar()
 bool Fase::concluida(Player *pnovo)
 {
 	if ((*pnovo).hp <= 0) {
-		(*pnovo).hp = (*pnovo).maxhp;
+		//(*pnovo).hp = (*pnovo).maxhp;
 		return false;
 	}
-	setScore(getScore() + (long)(*pnovo).hp * 10);
 	return true;
 }
+
+
 
 bool Fase::finalizada(Player* pnovo)
 {
@@ -427,5 +428,15 @@ long Fase::getScore()
 void Fase::setScore(long newscore)
 {
 	this->levelscore = newscore;
+}
+
+int Fase::getNroViruses()
+{
+	return nroViruses;
+}
+
+bool Fase::carregoufase()
+{
+	return carregou;
 }
 

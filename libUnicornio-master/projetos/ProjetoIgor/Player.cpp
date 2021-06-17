@@ -4,15 +4,7 @@
 
 Player::Player()
 {
-	ag = AlcoolGel();
-	c = Comprimido();
-	v = Vacina();
-	nivel = 1;
-	hp = 100;
-	maxhp = 100;
-	attack = 1;
-	defense = 1;
-	speed = 1;
+	//sprite.setSpriteSheet("drmario");
 }
 
 

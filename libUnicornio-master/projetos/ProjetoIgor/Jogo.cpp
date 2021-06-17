@@ -12,7 +12,15 @@
 #include "PinkVirus.h"
 #include "Covid.h"
 #include <string>
-
+#include "Fila.h"
+#include "Tela.h"
+#include "TelaPrincipal.h"
+#include "TelaCadastroUsuario.h"
+#include "TelaCarregarJogo.h"
+#include "TelaCreditos.h"
+#include "TelaRanking.h"
+#include "TelaJogo.h"
+#include <iostream>
 Jogo::Jogo()
 {
 }
@@ -21,6 +29,8 @@ Jogo::~Jogo()
 {
 }
 
+
+
 void Jogo::inicializar()
 {
 	uniInicializar(800, 600, false, "Dr Mario RPG: COVID Attack");
@@ -28,6 +38,7 @@ void Jogo::inicializar()
 	//	O resto da inicialização vem aqui!
 	//	...
 	gRecursos.carregarSpriteSheet("drmario", "../assets/DrMario.png");
+	player.sprite.setSpriteSheet("drmario");
 	gRecursos.carregarSpriteSheet("levelmap", "../assets/levelselect.jpg");
 	//Os 7 vírus
 	gRecursos.carregarSpriteSheet("redvirus", "../assets/RedVirus.png");
@@ -64,8 +75,11 @@ void Jogo::inicializar()
 	
 	//Armas e items do jogador
 	gRecursos.carregarSpriteSheet("capsule", "../assets/Capsule.jpg");
+	player.c.setSprite("capsule");
 	gRecursos.carregarSpriteSheet("alcoolgel", "../assets/AlcoolGel.jpg");
+	player.ag.setSprite("alcoolgel");
 	gRecursos.carregarSpriteSheet("vacina", "../assets/Vacina.jpg");
+	player.v.setSprite("vacina");
 	gRecursos.carregarSpriteSheet("item", "../assets/item.jpg");
 	gRecursos.carregarSpriteSheet("mascara", "../assets/Mascara.jpg");
 
@@ -112,6 +126,27 @@ void Jogo::inicializar()
 	srand(0);
 	state = Menu;
 	gAudios.inicializar();
+	ifstream arquivousuarios;
+	arquivousuarios.open("../usuarioscadastrados.txt");
+	if (arquivousuarios.is_open()) {
+		int nm;
+		arquivousuarios >> nm;
+		for (int i = 0; i < nm; i++) {
+			string n;
+			string ps;
+			arquivousuarios >> n;
+			arquivousuarios >> ps;
+			usuarioscadastrados->enfileirar(Usuario(n, ps));
+		}
+		arquivousuarios.close();
+		usuarioatual = usuarioscadastrados->primeiroDaFila();
+		pilhatelas = new Pilha<Tela*>;
+		pilhatelas->empilhar(new TelaCadastroUsuario);
+		pilhatelas->topoDaFila()->setIndexAtual(-1);
+	}
+	else{
+		
+	}
 }
 
 void Jogo::finalizar()
@@ -130,7 +165,67 @@ void Jogo::executar()
 		gAudios.tocar("musica", 1.0f);
 		//	Seu código vem aqui!
 		//	...
-		
+		gJanela.setCorDeFundo(255, 255, 0);
+		if (pilhatelas->estaVazia()) {
+			break;
+		}else if (pilhatelas->topoDaFila()->getTipo() == 1) {
+			pilhatelas->topoDaFila()->executar(&player, top5names, top5scores, usuarioscadastrados, &usuarioatual, files);
+			if (gTeclado.pressionou[TECLA_1]) {
+				//int aux = pilhatelas->topoDaFila()->getNivelAtual();
+				pilhatelas->empilhar(new TelaJogo);
+				//pilhatelas->topoDaFila()->setIndexAtual(aux);
+			}
+			else if (gTeclado.pressionou[TECLA_3]) {
+				pilhatelas->empilhar(new TelaRanking);
+			}
+			else if (gTeclado.pressionou[TECLA_4]) {
+				pilhatelas->empilhar(new TelaCreditos);
+			}
+			else if (gTeclado.pressionou[TECLA_2]) {
+				pilhatelas->empilhar(new TelaCarregarJogo);
+			}
+			else if (gTeclado.pressionou[TECLA_5]) {
+				pilhatelas->desenpilhar();
+			}
+		}
+		else if (pilhatelas->topoDaFila()->getTipo() == 2) {
+			pilhatelas->topoDaFila()->executar(&player, top5names, top5scores, usuarioscadastrados, &usuarioatual, files);
+			if (pilhatelas->topoDaFila()->isQuit()) {
+					pilhatelas->empilhar(new TelaPrincipal);
+			}else if (gTeclado.pressionou[TECLA_ESC]) {
+				pilhatelas->desenpilhar();
+			}
+		}
+		else if (pilhatelas->topoDaFila()->getTipo() == 3) {
+			pilhatelas->topoDaFila()->executar(&player, top5names, top5scores, usuarioscadastrados, &usuarioatual, files);
+			if (gTeclado.pressionou[TECLA_1]) {
+				pilhatelas->desenpilhar();
+			}
+		}
+		else if (pilhatelas->topoDaFila()->getTipo() == 4) {
+			pilhatelas->topoDaFila()->executar(&player, top5names, top5scores, usuarioscadastrados, &usuarioatual, files);
+			if (gTeclado.pressionou[TECLA_1]) {
+				pilhatelas->desenpilhar();
+			}
+		}
+		else if (pilhatelas->topoDaFila()->getTipo() == 5) {
+			pilhatelas->topoDaFila()->executar(&player, top5names, top5scores, usuarioscadastrados, &usuarioatual, files);
+			if (gTeclado.pressionou[TECLA_R]) {
+				pilhatelas->desenpilhar();
+			}
+			else if (pilhatelas->topoDaFila()->isQuit()) {
+				int aux = pilhatelas->topoDaFila()->getNivelAtual();
+				pilhatelas->empilhar(new TelaJogo);
+				pilhatelas->topoDaFila()->setIndexAtual(aux - 1);
+			}
+		}
+		else if (pilhatelas->topoDaFila()->getTipo() == 6) {
+			pilhatelas->topoDaFila()->executar(&player, top5names, top5scores, usuarioscadastrados, &usuarioatual, files);
+			if (pilhatelas->topoDaFila()->isQuit()) {
+				pilhatelas->desenpilhar();
+			}
+		}
+		/*
 		if (state == Menu) {
 			gJanela.setCorDeFundo(255, 255, 255);
 			mainmenu.executarMenu();
@@ -300,7 +395,12 @@ void Jogo::executar()
 			statusspeed.setEscalaY(1);
 			statusspeed.setAlinhamento(TEXTO_CENTRALIZADO);
 			statusspeed.desenhar(gJanela.getLargura() * 2 / 3, gJanela.getAltura() - 10);
-		}
+		}*/
 		uniTerminarFrame();
 	}
+}
+
+Player* Jogo::getPlayer()
+{
+	return &player;
 }

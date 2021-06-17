@@ -1,4 +1,6 @@
 #include "Jogo.h"
+#include "Fila.h"
+using namespace std;
 
 int main(int argc, char* argv[])
 {
@@ -6,6 +8,5 @@ int main(int argc, char* argv[])
 	jogo.inicializar();
 	jogo.executar();
 	jogo.finalizar();
-
 	return 0;
 }

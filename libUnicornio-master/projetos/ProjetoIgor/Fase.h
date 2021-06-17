@@ -18,6 +18,8 @@ public:
 	Virus* getViruses();
 	long getScore();
 	void setScore(long newscore);
+	int getNroViruses();
+	bool carregoufase();
 protected:
 	int fasewidth;
 	int faseheight;
@@ -28,8 +30,9 @@ protected:
 	int ano;
 	int local;
 	Virus *viruses = (Virus*)calloc(8, sizeof(Virus));
-	int virusderrotados;
+	int virusderrotados = 0;
 	int nroViruses;
 	Camera playercamera;
+	bool carregou = false;
 };
 

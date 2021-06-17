@@ -3,7 +3,7 @@
 AlcoolGel::AlcoolGel()
 {
 	setTipo(2);
-	setPoder(4);
+	setPoder(1);
 }
 
 

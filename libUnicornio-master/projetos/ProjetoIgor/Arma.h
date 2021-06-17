@@ -3,6 +3,8 @@
 class Arma
 {
 public:
+	Arma();
+	~Arma();
 	void setPosition(int* xnovo, int* ynovo, int* novodx, int* novody);
 	void resetPosition(int* xnovo, int* ynovo);
 	int dano(int nivelp, int attackp, int defensev);
@@ -19,7 +21,7 @@ public:
 	int moves = 0;
 	int poder;
 	bool movendo = false;
-	virtual void atualizar() = 0;
+	virtual void atualizar() {};
 protected:
 	Sprite sprite;
 	int tipo;

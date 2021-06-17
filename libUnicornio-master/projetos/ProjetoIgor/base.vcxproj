@@ -108,6 +108,7 @@
     <ClCompile Include="CyanVirus.cpp" />
     <ClCompile Include="Fase.cpp" />
     <ClCompile Include="GreenVirus.cpp" />
+    <ClCompile Include="InputTexto.cpp" />
     <ClCompile Include="Jogo.cpp" />
     <ClCompile Include="LevelSelect.cpp" />
     <ClCompile Include="main.cpp" />
@@ -119,6 +120,14 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PurpleVirus.cpp" />
     <ClCompile Include="RedVirus.cpp" />
+    <ClCompile Include="Tela.cpp" />
+    <ClCompile Include="TelaCadastroUsuario.cpp" />
+    <ClCompile Include="TelaCarregarJogo.cpp" />
+    <ClCompile Include="TelaCreditos.cpp" />
+    <ClCompile Include="TelaJogo.cpp" />
+    <ClCompile Include="TelaPrincipal.cpp" />
+    <ClCompile Include="TelaRanking.cpp" />
+    <ClCompile Include="Usuario.cpp" />
     <ClCompile Include="Vacina.cpp" />
     <ClCompile Include="Virus.cpp" />
     <ClCompile Include="YellowVirus.cpp" />
@@ -126,13 +135,17 @@
   <ItemGroup>
     <ClInclude Include="AlcoolGel.h" />
     <ClInclude Include="Arma.h" />
+    <ClInclude Include="ArrayList.h" />
     <ClInclude Include="BlueVirus.h" />
+    <ClInclude Include="Fila.h" />
+    <ClInclude Include="Cabeçalho1.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Comprimido.h" />
     <ClInclude Include="Covid.h" />
     <ClInclude Include="CyanVirus.h" />
     <ClInclude Include="Fase.h" />
     <ClInclude Include="GreenVirus.h" />
+    <ClInclude Include="InputTexto.h" />
     <ClInclude Include="Jogo.h" />
     <ClInclude Include="LevelSelect.h" />
     <ClInclude Include="Mascara.h" />
@@ -143,9 +156,20 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="PurpleVirus.h" />
     <ClInclude Include="RedVirus.h" />
+    <ClInclude Include="Tela.h" />
+    <ClInclude Include="TelaCadastroUsuario.h" />
+    <ClInclude Include="TelaCarregarJogo.h" />
+    <ClInclude Include="TelaCreditos.h" />
+    <ClInclude Include="TelaJogo.h" />
+    <ClInclude Include="TelaPrincipal.h" />
+    <ClInclude Include="TelaRanking.h" />
+    <ClInclude Include="Usuario.h" />
     <ClInclude Include="Vacina.h" />
     <ClInclude Include="Virus.h" />
     <ClInclude Include="YellowVirus.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="usuarioscadastrados.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

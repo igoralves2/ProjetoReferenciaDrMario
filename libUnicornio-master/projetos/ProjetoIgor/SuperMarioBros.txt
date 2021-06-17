@@ -1,0 +1,27 @@
+Super Mario Bros.:
+
+1)NOME DO JOGO E INFORMAÇÕES GERAIS
+
+	Super Mario Bros. foi lançado para NES em 1985, desenvolvido pela Nintendo EAD e publicado pela Nintendo. É o jogo mais icônico da franquia do Super Mario.
+
+2)GÊNERO, SINOPSE DA HISTÓRIA E OBJETIVOS
+
+	É um jogo de plataforma 2D com rolagem de tela lateral. 
+Como sinopse, o reino dos cogumelos foi invadido pelo rei Koopa e sua tribo do mal usando sua magia negra para transformar cogumelos vivos em objetos, tais como rochas e tijolos. 
+A princesa Peach era a única que podia desfazer esse feitiço, mas ela foi capturada por Bowser. O herói, Mario, terá que salvá-la para salvar o reino dos cogumelos passando por 8 mundos.
+
+3)MECÂNICAS
+
+	Mario pode apenas andar, correr e pular. Ele pode destruir certos inimigos pulando em cima, sendo alguns apenas com uso de energizadores.
+O cogumelo faz o herói crescer e poder destruir tijolos pulando em baixo e a flor, se coletada depois do cogumelo, dá poder de atirar bolas de fogo.
+A estrela da invencibilidade temporária. Se Mario receber dano, o jogador perde uma vida. Se isso acontecer se ele tiver com poderes, ele perde o efeito do cogumelo e da flor.
+Se o número de vidas do jogador chegar no zero, o jogador terá que começar o jogo do começo. Para ganhar vidas, o jogador pode coletar 100 moedas. Os blocos com ponto de interrogação,
+se Mario pular embaixo deles, eles dão moedas ou um item. O jogador pode descer por alguns canos para entrar em passagens secretas. Alguns canos são encontrados em áreas secretas e podem
+fazer o jogador pular de fase. Na última fase de cada mundo, Mario entra num castelo. Neles, tem um chefão no final. Após derrotá-lo, Mario salva um Toad (cogumelo vivo) e, no último castelo,
+a princesa.
+
+
+4)EXPERIENCIA PESSOAL
+
+	Eu gostei muito de jogar, pois ele é muito criativo. Eu passava facilmente pelas fases iniciais, mas tinha dificuldade em progredir nas fases mais avançadas. Nunca consegui completar o jogo porque eu não podia
+salvar meu progresso e se perdia todas as vidas eu tinha que começar do zero. Infelizmente, ele não está mais disponível, mas a experiência de jogar foi positiva.
